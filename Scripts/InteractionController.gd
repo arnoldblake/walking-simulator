@@ -9,7 +9,7 @@ func _process(_delta: float) -> void:
 	if object and object is InteractableObject:
 		object = object as InteractableObject
 		if object.can_interact:
-			interact_prompt_label.text = object.interact_prompt
+			interact_prompt_label.text = "[F] " + object.interact_prompt
 			if Input.is_action_just_pressed("interact"):
 				object._interact()
 	else:
