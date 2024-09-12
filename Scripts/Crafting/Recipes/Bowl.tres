@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CraftingRecipe" load_steps=3 format=3 uid="uid://dafoymahno01p"]
+
+[ext_resource type="Script" path="res://Scripts/Crafting/CraftingRecipeRequirement.gd" id="1_i4fhs"]
+[ext_resource type="Script" path="res://Scripts/Crafting/CraftingRecipe.gd" id="2_tdcts"]
+
+[resource]
+script = ExtResource("2_tdcts")
+requirements = Array[ExtResource("1_i4fhs")]([])

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://e0ttbsvgtanl"]
+[gd_scene load_steps=17 format=3 uid="uid://e0ttbsvgtanl"]
 
 [ext_resource type="Texture2D" uid="uid://cqubdkwj11v1i" path="res://Models/Grass.jpg" id="1_a7kdx"]
 [ext_resource type="ArrayMesh" uid="uid://cndcxj6gf0smr" path="res://Models/Terrain.obj" id="2_hq2ui"]
@@ -8,10 +8,9 @@
 [ext_resource type="Script" path="res://Models/PedestalInteraction.gd" id="6_glt25"]
 [ext_resource type="PackedScene" uid="uid://b7ex20ul8m08k" path="res://Scenes/Bank.tscn" id="7_5mpir"]
 [ext_resource type="PackedScene" uid="uid://hel0pvb2x3y5" path="res://Scenes/Player.tscn" id="8_61v2a"]
-[ext_resource type="PackedScene" uid="uid://dvhepc1sy47lu" path="res://Scenes/WorldItems/world_item_goo.tscn" id="9_1jwye"]
-[ext_resource type="PackedScene" uid="uid://duaslhgxoh2qm" path="res://Scenes/WorldItems/world_item_wood.tscn" id="10_kpham"]
-[ext_resource type="PackedScene" uid="uid://dhcrm05gukwvy" path="res://Scenes/WorldItems/world_item_iron.tscn" id="11_u6m4e"]
-[ext_resource type="PackedScene" uid="uid://bxiwuhg2nudxu" path="res://Models/Staff_01/sm_wep_collection.tscn" id="12_la6d0"]
+[ext_resource type="PackedScene" uid="uid://dvhepc1sy47lu" path="res://Items/World Items/world_item_goo.tscn" id="9_1jwye"]
+[ext_resource type="PackedScene" uid="uid://duaslhgxoh2qm" path="res://Items/World Items/world_item_wood.tscn" id="10_kpham"]
+[ext_resource type="PackedScene" uid="uid://dhcrm05gukwvy" path="res://Items/World Items/world_item_iron.tscn" id="11_u6m4e"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wnhim"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -219,6 +218,3 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.851
 
 [node name="WorldItem_Iron6" parent="WorldItems" instance=ExtResource("11_u6m4e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.85156, 0.910258, -18.2967)
-
-[node name="SM_Wep_Collection" parent="." instance=ExtResource("12_la6d0")]
-transform = Transform3D(1, 0, 0, 0, 0.0710101, 0.997476, 0, -0.997476, 0.0710101, 1.63901, 1.7523, -3.70875)
