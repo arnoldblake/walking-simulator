@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://hel0pvb2x3y5"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerController.gd" id="1_hoqft"]
-[ext_resource type="Script" path="res://Scripts/InteractionController.gd" id="2_u707p"]
+[ext_resource type="Script" path="res://Scripts/Interaction/InteractionController.gd" id="2_u707p"]
 [ext_resource type="Script" path="res://Scripts/Inventory/Inventory.gd" id="3_gqhc6"]
 [ext_resource type="Script" path="res://Scripts/Item.gd" id="4_fmpar"]
 [ext_resource type="PackedScene" uid="uid://b44xo2csq3u73" path="res://Scenes/Inventory/InventorySlot.tscn" id="4_wig2p"]

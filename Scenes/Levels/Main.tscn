@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://cqubdkwj11v1i" path="res://Models/Grass.jpg" id="1_a7kdx"]
 [ext_resource type="ArrayMesh" uid="uid://cndcxj6gf0smr" path="res://Models/Terrain.obj" id="2_hq2ui"]
-[ext_resource type="PackedScene" uid="uid://cfr7h8g71lsm2" path="res://Models/Tree.tscn" id="3_xsowd"]
+[ext_resource type="PackedScene" uid="uid://cfr7h8g71lsm2" path="res://Models/Tree_0/Tree.tscn" id="3_xsowd"]
 [ext_resource type="PackedScene" uid="uid://dwxdl6tkvd55k" path="res://Models/Rock_0/Rock.tscn" id="4_q57wh"]
-[ext_resource type="PackedScene" uid="uid://dut3gyo4e7qbo" path="res://Models/Pedestal.tscn" id="5_600cv"]
+[ext_resource type="PackedScene" uid="uid://dut3gyo4e7qbo" path="res://Models/Pedestal/Pedestal.tscn" id="5_600cv"]
 [ext_resource type="Script" path="res://Models/PedestalInteraction.gd" id="6_glt25"]
 [ext_resource type="PackedScene" uid="uid://b7ex20ul8m08k" path="res://Scenes/Bank.tscn" id="7_5mpir"]
 [ext_resource type="PackedScene" uid="uid://hel0pvb2x3y5" path="res://Scenes/Player.tscn" id="8_61v2a"]
