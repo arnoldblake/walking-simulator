@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://hel0pvb2x3y5"]
+[gd_scene load_steps=18 format=3 uid="uid://hel0pvb2x3y5"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerController.gd" id="1_hoqft"]
 [ext_resource type="Script" path="res://Scripts/InteractionController.gd" id="2_u707p"]
@@ -9,6 +9,12 @@
 [ext_resource type="Resource" uid="uid://b1a1ughcymhuw" path="res://Items/Item Data/Iron.tres" id="6_i7u28"]
 [ext_resource type="Resource" uid="uid://coo3o51r41hxf" path="res://Items/Item Data/Wood.tres" id="7_00vci"]
 [ext_resource type="Resource" uid="uid://ohprq77yoakt" path="res://Items/Item Data/Staff.tres" id="8_p3q21"]
+[ext_resource type="PackedScene" uid="uid://b3sab1qfblhk5" path="res://Scenes/Crafting/CraftingRecipeUI.tscn" id="10_py3mw"]
+[ext_resource type="Script" path="res://Scripts/Crafting/Crafting.gd" id="10_u4vxv"]
+[ext_resource type="Script" path="res://Scripts/Crafting/CraftingRecipe.gd" id="12_uls3h"]
+[ext_resource type="Resource" uid="uid://dafoymahno01p" path="res://Scripts/Crafting/Recipes/Bowl.tres" id="13_d3kyi"]
+[ext_resource type="Resource" uid="uid://ctp265h0ckfaf" path="res://Scripts/Crafting/Recipes/GooBowl.tres" id="14_k1wm7"]
+[ext_resource type="Resource" uid="uid://biifmi84tj87a" path="res://Scripts/Crafting/Recipes/Fork.tres" id="15_84u4q"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_csxkn"]
 radius = 0.3
@@ -51,6 +57,7 @@ script = ExtResource("3_gqhc6")
 starter_items = Array[ExtResource("4_fmpar")]([ExtResource("5_geq7y"), ExtResource("6_i7u28"), ExtResource("7_00vci"), ExtResource("7_00vci"), ExtResource("7_00vci"), ExtResource("6_i7u28"), ExtResource("8_p3q21")])
 
 [node name="InventoryWindow" type="Panel" parent="Inventory"]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -137,3 +144,36 @@ grow_vertical = 0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 horizontal_alignment = 1
+
+[node name="Crafting" type="Node" parent="."]
+script = ExtResource("10_u4vxv")
+crafting_recipe_ui_scene = ExtResource("10_py3mw")
+recipes = Array[ExtResource("12_uls3h")]([ExtResource("13_d3kyi"), ExtResource("14_k1wm7"), ExtResource("15_84u4q")])
+
+[node name="CraftingWindow" type="Panel" parent="Crafting"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Crafting/CraftingWindow"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="RecipeContainer" type="VBoxContainer" parent="Crafting/CraftingWindow/MarginContainer"]
+layout_mode = 2
