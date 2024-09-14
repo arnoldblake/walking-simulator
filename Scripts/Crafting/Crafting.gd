@@ -22,7 +22,7 @@ func _ready() -> void:
 		recipe_node.crafting = self
 		recipe_uis.append(recipe_node)
 		
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("craft"):
 			toggle_window(!window.visible)
 

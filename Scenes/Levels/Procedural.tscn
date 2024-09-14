@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/ProceduralGeneration/TerrainGeneration.gd" id="1_g465c"]
 [ext_resource type="PackedScene" uid="uid://hel0pvb2x3y5" path="res://Scenes/Player.tscn" id="2_myrm1"]
 [ext_resource type="PackedScene" uid="uid://c58hd7xlb1u56" path="res://Scenes/ProceduralGeneration/spawnable_object.tscn" id="2_n3kgk"]
-[ext_resource type="PackedScene" uid="uid://dwxdl6tkvd55k" path="res://Models/Rock_0/Rock.tscn" id="3_t5qkc"]
+[ext_resource type="PackedScene" uid="uid://dwxdl6tkvd55k" path="res://Models/Terrain/Rock_0/Rock.tscn" id="3_t5qkc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7r47i"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
